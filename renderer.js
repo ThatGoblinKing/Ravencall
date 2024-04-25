@@ -17,7 +17,11 @@ document.getElementById('gridCount').addEventListener('input', async () => {
     if (sliderValue > grid.childNodes.length) {
       const node = document.createElement('div');
       node.className = "grid-item"
-      node.appendChild(document.createTextNode("EXAMPLE"));
+      var img = document.createElement("img")
+      img.src = "1200px-Checkerboard_pattern (Custom).png"
+      img.style.height = 100
+      img.style.width = 100
+      node.appendChild(img);
       grid.appendChild(node);
     } else {
       grid.removeChild(grid.lastChild);

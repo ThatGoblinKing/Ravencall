@@ -8,15 +8,63 @@
 
 .grid-item {
   justify-self: center;
+  justify-content: space-around;
   background-color: rgba(200, 200, 200, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
   text-align: center;
-  aspect-ratio: 3 / 4;
-  height: 256px;
+  aspect-ratio: 2/3;
+  height: calc(384px - 15px);
 }
 
 .grid-item:last-child {
   margin-right: 0;
+}
+
+.volume-bar {
+    margin: 0px;
+  padding: 0px;
+  border: 0px;
+  appearance: slider-vertical;
+  height: 130px;
+  width: 30px;
+}
+
+.split-card {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+}
+
+.option-list {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 10pt;
+  vertical-align: top;
+}
+
+.name-bar {
+  margin: 0px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  padding: 0px;
+  border: 0px;
+  height: 45px;
+  background-color: rgba(155, 155, 155, 0.8);
+}
+
+.thumbnail {
+  height: 155px;
+  width: 155px;
+  aspect-ratio: 1/1;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding: 0px;
+  border: 0px;
+  object-fit: cover;
 }
