@@ -14,8 +14,9 @@
   padding-right: 20px;
   padding-top: 15px;
   text-align: center;
-  aspect-ratio: 2/3;
   height: calc(384px - 15px);
+  width: calc(246px - 30px);
+  background-image: url("cardBG.png");
 }
 
 .grid-item:last-child {
@@ -35,6 +36,7 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
+  height: 129px;
   display: flex;
   justify-content: space-between;
   background-color: blanchedalmond;
@@ -46,16 +48,24 @@
   border: 0px;
   font-size: 10pt;
   vertical-align: top;
+  list-style-type: none;
+  text-align: left;
+  font-size: 15pt;
+  line-height: 22pt;
 }
 
 .name-bar {
   margin: 0px;
-  margin-top: -20px;
+  margin-top: 0px;
   margin-bottom: 10px;
   padding: 0px;
   border: 0px;
   height: 45px;
-  background-color: rgba(155, 155, 155, 0.8);
+  background-color: rgb(56, 33, 33);
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 15pt;
+  color: white;
+  align-content: center;
 }
 
 .thumbnail {
@@ -63,8 +73,26 @@
   width: 155px;
   aspect-ratio: 1/1;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   padding: 0px;
   border: 0px;
   object-fit: cover;
+  image-rendering: pixelated;
+}
+
+.options-container {
+  width: 150px;
+  justify-items: left;
+}
+
+.selection-container {
+  width: 33px;
+}
+
+.volume-bar-container {
+  width: 33px;
+}
+
+* {
+  font-family: "Pixelify Sans", sans-serif;
 }

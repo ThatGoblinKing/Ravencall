@@ -11,7 +11,8 @@ function createWindow () {
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    icon: "Ravencall(1).ico",
   })
 
   // and load the index.html of the app.

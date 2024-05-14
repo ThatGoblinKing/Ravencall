@@ -18,9 +18,8 @@ document.getElementById('gridCount').addEventListener('input', async () => {
       const node = document.createElement('div');
       node.className = "grid-item"
       var img = document.createElement("img")
-      img.src = "1200px-Checkerboard_pattern (Custom).png"
-      img.style.height = 100
-      img.style.width = 100
+      img.src = "NOTFOUND.png"
+      img.className = "thumbnail"
       node.appendChild(img);
       grid.appendChild(node);
     } else {
