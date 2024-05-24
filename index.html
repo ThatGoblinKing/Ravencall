@@ -18,9 +18,14 @@
 <div class="grid-container" id="grid">
     <div class="grid-item">
         <img src="NOTFOUND.png" class="thumbnail">
-        <div class="name-bar"><p>Example Sound</p></div>
+        <div class="name-bar"><p class="name">Example Sound</p></div>
         <div class="split-card">
-            <div class="selection-container"><p>a</p></div>
+            <div class="selection-container">
+                <input class="selection-choice" type="checkbox" id="variant1" name="soundVariants" value=1/>
+                <input class="selection-choice" type="checkbox" id="variant2" name="soundVariants" value=2/>
+                <input class="selection-choice" type="checkbox" id="variant3" name="soundVariants" value=3/>
+                <input class="selection-choice" type="checkbox" id="variant4" name="soundVariants" value=4/>
+            </div>
             <div class="options-container">
                 <ul class="option-list">
                     <li>Option A</li>
@@ -29,7 +34,9 @@
                     <li>Option D</li>
                 </ul>
             </div>
-            <div class="volume-bar-container"><p>a</p></div>
+            <div class="volume-bar-container">
+                <input type="range" orient="vertical" id="volumeBar" min="0" max = "100" value = "0" class="volume-bar"/>
+            </div>
         </div>
     </div>
     <img src="exampleCard (Custom).png">

@@ -24,12 +24,53 @@
 }
 
 .volume-bar {
-    margin: 0px;
+  appearance: none;
+  -webkit-appearance:none;
+  margin: 0px;
   padding: 0px;
-  border: 0px;
-  appearance: slider-vertical;
-  height: 130px;
-  width: 30px;
+  border: 1px;
+  border-radius: 0px;
+  height: 11px;
+  width: 130px;
+  transform-origin: bottom;
+  background-color: #382121;
+  accent-color: #81c479;
+  transform: translateY(120px) translateX(23px) rotate(-90deg);
+  transform-origin: left center;
+  box-shadow: 5px 0px #382121;
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%);
+}
+
+.volume-bar::-moz-range-track {
+  background: #382121;
+  width: 11px;
+  box-shadow: 5px 0px #382121;
+}
+
+.volume-bar::-moz-range-progress {
+  background-color: #81c479;
+  width:11px 
+}
+
+.volume-bar::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px;
+}
+
+.volume-bar::-moz-range-thumb {
+  width:34px;
+  border-radius: 0px; 
+  border: 0;
+  height:10px;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 34px;
+  background-color: white;
 }
 
 .split-card {
@@ -39,7 +80,6 @@
   height: 129px;
   display: flex;
   justify-content: space-between;
-  background-color: blanchedalmond;
 }
 
 .option-list {
@@ -52,14 +92,15 @@
   text-align: left;
   font-size: 15pt;
   line-height: 22pt;
+  color: white;
 }
 
 .name-bar {
-  margin: 0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  position: relative;
+  margin: auto;
   padding: 0px;
   border: 0px;
+  margin-bottom: 10px;
   height: 45px;
   background-color: rgb(56, 33, 33);
   font-family: "Pixelify Sans", sans-serif;
@@ -86,6 +127,7 @@
 }
 
 .selection-container {
+  line-height: 22pt;
   width: 33px;
 }
 
@@ -93,6 +135,20 @@
   width: 33px;
 }
 
+.selection-choice {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: transparent;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
+}
+
+.selection-choice:checked {
+  background-color: white;
+}
 * {
   font-family: "Pixelify Sans", sans-serif;
 }

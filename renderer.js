@@ -6,7 +6,13 @@ document.getElementById("testButton").addEventListener('click', async () => {
 })
 
 
-
+document.getElementById("volumeBar").addEventListener('input', async () => {
+  this.min = 0;
+  this.max = 100;
+  var value = (this.value-this.min)/(this.max-this.min)*100;
+  this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #fff ' + value + '%, white 100%)';
+  console.log("ASJDASKF");
+});;
 
 document.getElementById('gridCount').addEventListener('input', async () => {
   let sliderValue = document.getElementById('gridCount').value;
